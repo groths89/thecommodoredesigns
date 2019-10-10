@@ -9,13 +9,13 @@ const ContactPage = () => (
 							<div>
 								<p>Three ways to contact me:</p>
 								<p>
-									You can send me an email at the address list here. <a href="#">Gregory Rothstein</a>.
+									You can send me an email at the address listed here. <a href="mailto:gregory@thecommodoredesigns.com">Gregory Rothstein</a>.
 								</p>
 								<p>
-									...Or you can give me a call or text. Just a heads up I respond better to texts rather than calls. My cell phone is listed here, <a href="#"> 914-960-7387</a>.
+									...Or you can give me a <a alt="PHONE CALL" href="tel:914-960-7387"> PHONE CALL</a>. Just a heads up I respond better to <a alt="SMS TEXT MESSAGE" href="sms:914-960-7387">SMS TEXT MESSAGES</a>. My cell phone is listed here, <a href="tel:914-960-7387"> 914-960-7387</a>.
 								</p>
 								<p>
-									...Or you can fill out this form on this page and I will contact you about the inquiry of my services. 
+									...Or you can fill out this form on this page and I will contact you. 
 								</p>	
 							</div>
 
