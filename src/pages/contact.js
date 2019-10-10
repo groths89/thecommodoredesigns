@@ -7,14 +7,15 @@ const ContactPage = () => (
 						<h2>Contact</h2>
 						<div>
 							<div>
+								<p>Three ways to contact me:</p>
 								<p>
-									This website has been designed by <a href="#">Gregory Rothstein</a> for you, for free. You can replace all this text with your own text.
+									You can send me an email at the address list here. <a href="#">Gregory Rothstein</a>.
 								</p>
 								<p>
-									You can remove any link to our website from this website template, you're free to use this website template without linking back to us.
+									...Or you can give me a call or text. Just a heads up I respond better to texts rather than calls. My cell phone is listed here, <a href="#"> 914-960-7387</a>.
 								</p>
 								<p>
-									If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="#">Forums</a>.
+									...Or you can fill out this form on this page and I will contact you about the inquiry of my services. 
 								</p>	
 							</div>
 
