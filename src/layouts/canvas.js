@@ -1,3 +1,4 @@
+import GregCharacter from "../layouts/images/2d_animation-GRoth.pmg";
 var canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;
@@ -35,6 +36,7 @@ class Circle {
             c.arc(this.x, this.y, this.radius, Math.PI * 2, false);
             c.fillStyle = "#cc5515";
             c.fill();
+            c.drawImage(GregCharacter, 90, 130, 50, 60, 10, 10, 50, 60);
         };
         this.update = function () {
             if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {

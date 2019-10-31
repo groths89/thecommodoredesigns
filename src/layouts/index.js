@@ -29,9 +29,6 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div id="bg">
-			background
-		</div>
     
     <div
     style={{
