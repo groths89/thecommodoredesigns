@@ -10,8 +10,10 @@ import projectC from './img/PrettyInPrintCT_Web.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faWifi } from '@fortawesome/free-solid-svg-icons'
+import { faUserCheck } from '@fortawesome/free-solid-svg-icons'
+import { faTasks } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faWifi)
+library.add(faWifi, faUserCheck, faTasks)
 
 const IndexPage = () => (
   	<div className="body" id="main">
@@ -30,10 +32,14 @@ const IndexPage = () => (
 				<li>
 					<em>Junior Software Quality Assurance Analyst</em> <br />
 					<strong>AiCure</strong>
+					<br></br>
+					<FontAwesomeIcon class="icon-bg" icon="tasks"></FontAwesomeIcon>
 				</li>
 				<li>
 					<em>Video Reviewer</em> <br />
 					<strong>AiCure</strong>
+					<br></br>
+					<FontAwesomeIcon class="icon-bg" icon="user-check"></FontAwesomeIcon>
 				</li>
 			</ul>
 			<h2>Education</h2>

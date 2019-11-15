@@ -890,6 +890,24 @@ pre tt:after {
   z-index: 0;
 }
 
+.fa-user-check{
+  position: relative;
+  bottom: -35px;
+  left: -35px;
+  font-size: 150pt;
+  color: #cccccc;
+  z-index: 0;
+}
+
+.fa-tasks{
+  position: relative;
+  bottom: -35px;
+  left: -5px;
+  font-size: 150pt;
+  color: #cccccc;
+  z-index: 0;
+}
+
 .intro-h{
   width: 50vw !important;
   display: flex;
