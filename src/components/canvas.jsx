@@ -8,7 +8,7 @@ class Canvas extends React.Component {
         var images = new Image();
         const canvas = this.refs.canvas;
         const ctx = canvas.getContext("2d");
-        images.src = 'http://localhost:8000/static/2d_animation-GRoth.2788c0dd.png';
+        images.src = 'static/2d_animation-GRoth.2788c0dd.png';
         images.onload = function() {
           ctx.scale(0.3,0.3); 
           ctx.drawImage(images,0,0);
