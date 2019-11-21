@@ -1,24 +1,24 @@
 import React from 'react'
 import image from './img/home-image.jpg'
-import GregCharacter from "../layouts/images/2d_animation-GRoth.jpg";
+import Character from '../components/img/2d_animation-GRoth.png'
+
 
 class Canvas extends React.Component {
     componentDidMount(){
+        var images = new Image();
         const canvas = this.refs.canvas;
         const ctx = canvas.getContext("2d");
-            ctx.beginPath();    
-            ctx.font = "30px Arial";
-            ctx.fillStyle = "red";
-            ctx.beginPath();
-            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-            ctx.stroke();
-            ctx.fill();
-
+        images.src = 'http://localhost:8000/static/2d_animation-GRoth.2788c0dd.png';
+        images.onload = function() {
+          ctx.scale(0.3,0.3); 
+          ctx.drawImage(images,0,0);
+          
+        }
     }
     render() {
         return(
           <div>
-            <canvas className="canvas" ref="canvas" width={640} height={425} src={GregCharacter} />
+            <canvas className="canvas" ref="canvas" width={1500} height={425} src={Character} />
           </div>
         )
       }
