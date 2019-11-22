@@ -12,7 +12,6 @@ class Canvas extends React.Component {
         images.onload = function() {
           ctx.scale(0.3,0.3); 
           ctx.drawImage(images,0,0);
-          
         }
     }
     render() {
