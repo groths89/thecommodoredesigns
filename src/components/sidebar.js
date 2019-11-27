@@ -15,27 +15,44 @@ import Toggle from './Toggle'
 library.add(faDownload,faAngleDoubleRight,faCodeBranch,faLandmark,faImages,faComments)
 
 class Sidebar extends React.Component {
+	
 	constructor(props) {
-	  super(props);
-	  this.state = {isToggleOn: true};
-  
+		super(props);
+		this.state = {
+			isToggleOn: true
+		};
+
 	  // This binding is necessary to make `this` work in the callback
 		this.handleClick = this.handleClick.bind(this);
 	  }
 	  
-	  handleClick() {
-		this.setState(prevState => ({
-			isToggleOn: document.getElementById("mySidenav").style.width = "9.8%",
-			isToggleOn: document.getElementById("main").style.marginLeft = "0",
-			isToggleOn: document.getElementById("btnOpen").style.display = "none",
-			isToggleOn: document.getElementById("btnClose").style.display = "block",
-			isToggleOn: document.getElementById("myName").style.fontSize = "12pt",
-			isToggleOn: document.getElementById("myName").style.display = "block",
-			isToggleOn: document.getElementById("myDba").style.display = "block",
-			isToggleOn: document.getElementById("copyright").style.display = "block",
-		}));
-  
-	  }
+	handleClick() {
+		if (window.innerWidth <= 480) {
+				this.setState(prevState => ({
+					isToggleOn: document.getElementById("mySidenav").style.width = "45.2%",
+					isToggleOn: document.getElementById("main").style.marginLeft = "0",
+					isToggleOn: document.getElementById("btnOpen").style.display = "none",
+					isToggleOn: document.getElementById("btnClose").style.display = "block",
+					isToggleOn: document.getElementById("copyright").style.display = "block",
+				}));
+		} else if (window.innerWidth > 480 && window.innerWidth < 769) {
+				this.setState(prevState => ({
+					isToggleOn: document.getElementById("mySidenav").style.width = "24.4%",
+					isToggleOn: document.getElementById("main").style.marginLeft = "0",
+					isToggleOn: document.getElementById("btnOpen").style.display = "none",
+					isToggleOn: document.getElementById("btnClose").style.display = "block",
+					isToggleOn: document.getElementById("copyright").style.display = "block",
+				}));
+		} else {
+			this.setState(prevState => ({
+				isToggleOn: document.getElementById("mySidenav").style.width = "9.8%",
+				isToggleOn: document.getElementById("main").style.marginLeft = "0",
+				isToggleOn: document.getElementById("btnOpen").style.display = "none",
+				isToggleOn: document.getElementById("btnClose").style.display = "block",
+				isToggleOn: document.getElementById("copyright").style.display = "block",
+			}));	
+		}
+	}
   
 		render(){
 		  return (
@@ -43,10 +60,6 @@ class Sidebar extends React.Component {
 		  <div className="sidebar" id="mySidenav">
 				<Toggle />
 				<a href="javascript:void(0)" id="btnOpen" onClick={this.handleClick} className="openbtn"><FontAwesomeIcon icon="angle-double-right" /></a>
-				<div className="name" id="myName">
-					<p >Gregory Paul Rothstein</p>
-				</div>
-				<span id="myDba"><em>Doing Business As</em></span>
 				<Link to="/" id="logo">
                     <img src={logo} alt="Logo" />
                 </Link>

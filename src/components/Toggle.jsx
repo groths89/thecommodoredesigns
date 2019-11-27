@@ -20,9 +20,6 @@ class Toggle extends React.Component {
         isToggleOn: !(document.getElementById("main").style.marginLeft = "0"),
         isToggleOn: !(document.getElementById("btnOpen").style.display = "block"),
         isToggleOn: !(document.getElementById("btnClose").style.display = "none"),
-        isToggleOn: !(document.getElementById("myName").style.fontSize = "10pt"),
-        isToggleOn: !(document.getElementById("myName").style.display = "none"),
-        isToggleOn: !(document.getElementById("myDba").style.display = "none"),
         isToggleOn: !(document.getElementById("copyright").style.display = "none"),
       }));
 

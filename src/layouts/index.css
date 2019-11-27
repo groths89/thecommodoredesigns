@@ -845,19 +845,33 @@ pre tt:after {
 .body .home ul li{
   width: 25%;
   height: 300px;
-  background: #dddddd;
+  background: #ffffff;
   display: block;
   float: left;
   margin: 0 3em;
-  border: 1px solid #adadad;
+  border: 3px solid #000000;
   border-radius: 3px;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media(max-width: 1620px){
+  .body .home ul li{
+    margin: 10px 1em 0;
+  }
+}
+
+@media(max-width: 1024px){
+  .body .home ul li{
+    margin: 10px 1em 0;
+    width: 100%;
+  }
+}
+
 .body .home ul li em{
   float: right;
   padding: 7px;
+  text-align: right;
 }
 
 .body .home ul li strong{
@@ -886,7 +900,7 @@ pre tt:after {
   bottom: -35px;
   left: -35px;
   font-size: 150pt;
-  color: #cccccc;
+  color: #eeeeee;
   z-index: 0;
 }
 
@@ -895,7 +909,7 @@ pre tt:after {
   bottom: -35px;
   left: -35px;
   font-size: 150pt;
-  color: #cccccc;
+  color: #eeeeee;
   z-index: 0;
 }
 
@@ -904,7 +918,7 @@ pre tt:after {
   bottom: -35px;
   left: -5px;
   font-size: 150pt;
-  color: #cccccc;
+  color: #eeeeee;
   z-index: 0;
 }
 
