@@ -45,7 +45,7 @@ const Layout = ({ children, data }) => (
     }}
     > 
     </div>
-    
+
     <Sidebar siteTitle={data.site.siteMetadata.title} />
     <div className="page">
     

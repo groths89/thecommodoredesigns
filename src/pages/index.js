@@ -25,19 +25,19 @@ const IndexPage = () => (
 			<ul>
 				<li>
 					<em>Web Developer</em> <br />
-					<strong>Freelance</strong>
+					<strong>FREELANCE</strong>
 					<br></br>
 					<FontAwesomeIcon class="icon-bg" icon="wifi"></FontAwesomeIcon>	
 				</li>
 				<li>
 					<em>Junior Software Quality Assurance Analyst</em> <br />
-					<strong>AiCure</strong>
+					<strong>AICURE</strong>
 					<br></br>
 					<FontAwesomeIcon class="icon-bg" icon="tasks"></FontAwesomeIcon>
 				</li>
 				<li>
 					<em>Video Reviewer</em> <br />
-					<strong>AiCure</strong>
+					<strong>AICURE</strong>
 					<br></br>
 					<FontAwesomeIcon class="icon-bg" icon="user-check"></FontAwesomeIcon>
 				</li>

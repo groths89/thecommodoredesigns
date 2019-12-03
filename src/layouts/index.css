@@ -565,8 +565,8 @@ pre tt:after {
 
 .body {
 	float:left;
-	width:100vw;
-	height: auto;
+  width:100%;
+  height: auto;
 	min-height: 100% !important;
   position: relative;
 	background:url(/img/bg-body.jpg) repeat-y #e6e6e6;
@@ -585,9 +585,9 @@ pre tt:after {
 	background:#e3e3e3;
 }
 .page {
-	width:auto;
+	width: auto;
 	height: 100vh;
-  margin:0 0;
+  margin: 0 0;
   overflow-x: hidden;
 }
 #main{
@@ -599,7 +599,6 @@ pre tt:after {
 	margin: 0;
 	position: fixed;
 	text-indent: -99999px;
-	width: 9.8%;
 	z-index: 9998;
 	border-color: #E5E5E5;
 	border-style: solid none none;
@@ -650,7 +649,7 @@ pre tt:after {
   width:0;
   background:#E7CA11;
 	float:left;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
   display: block;
   z-index: 9999;
@@ -862,9 +861,49 @@ pre tt:after {
 }
 
 @media(max-width: 1024px){
-  .body .home ul li{
-    margin: 10px 1em 0;
+  .page {
+    width: auto;
+    height: 100%;
+    margin: 0 -11em;
+    overflow-x: hidden;
+  }
+  .body .home ul {
+    margin: 0 52px;
     width: 100%;
+  }
+   .body .home ul li{
+    margin: 11px 2em 0px;
+    width: 63%;
+  }
+}
+
+@media(max-width: 768px){
+  .page {
+    width: auto;
+    height: 100%;
+    margin: 0 -11em;
+    overflow-x: hidden;
+  }
+  .body .home ul {
+    margin: 0 52px;
+    width: 100%;
+}
+   .body .home ul li{
+    margin: 11px 2em 0px;
+    width: 63%;
+  }
+}
+@media(max-width: 480px){
+  .body div h2 {
+    width: 100%;
+  }
+  .body .home ul {
+    margin: 0 47px;
+    width: 100%;
+  }
+  .body .home ul li{
+    margin: 11px 3em 0px;
+    width: 53%;
   }
 }
 
@@ -1090,7 +1129,6 @@ pre tt:after {
 }
 .body div div {
 	box-shadow:none;
-  margin: 0 65px;
   float: left;
   clear: both;
   width: 80vw;

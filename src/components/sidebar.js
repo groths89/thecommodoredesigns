@@ -45,7 +45,7 @@ class Sidebar extends React.Component {
 				}));
 		} else {
 			this.setState(prevState => ({
-				isToggleOn: document.getElementById("mySidenav").style.width = "9.8%",
+				isToggleOn: document.getElementById("mySidenav").style.width = "14.9%",
 				isToggleOn: document.getElementById("main").style.marginLeft = "0",
 				isToggleOn: document.getElementById("btnOpen").style.display = "none",
 				isToggleOn: document.getElementById("btnClose").style.display = "block",
