@@ -67,7 +67,7 @@ class Sidebar extends React.Component {
 					<li className="sidebar-nav"><Link id="myAbout" to="/about"><FontAwesomeIcon icon="code-branch" />About</Link></li>
 					{/* <li className="sidebar-nav"><Link id="myAbout" to="/about"><FontAwesomeIcon icon="code-branch" />Experience</Link></li> */}
 					<li className="sidebar-nav"><Link id="myCerts" to="/certifications"><FontAwesomeIcon icon="landmark" />Education</Link></li>
-					<li className="sidebar-nav"><Link id="myPort" to="/portfolio-logo-design"><FontAwesomeIcon icon="images" />Work Samples</Link></li>
+					<li className="sidebar-nav"><Link id="myPort" to="/portfolio"><FontAwesomeIcon icon="images" />Work Samples</Link></li>
 					<li className="sidebar-nav"><Link id="myCont" to="/contact"><FontAwesomeIcon icon="comments" />Contact</Link></li>
 					<li className="sidebar-nav"><Link id="myResume"><FontAwesomeIcon icon="download" />Resume</Link></li>
 				</ul>

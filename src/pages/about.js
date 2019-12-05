@@ -46,7 +46,9 @@ const AboutPage = () => (
 									<h3>2009 College Portfolio</h3>
 									<div>
 										<iframe src="https://groths89.github.io/2009-Portfolio-Website/" scrolling="auto">
+											<div style={{ borderColor: 'red', borderStyle: 'dashed none none', borderWidth: '3px', width: '100px', height: '100px' }}>
 
+											</div>
 										</iframe>
 									</div>
 									<p>This here was the portfolio I had to create in 2009 for college. It is your basic website only with 

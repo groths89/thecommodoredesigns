@@ -860,7 +860,7 @@ pre tt:after {
   }
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1068px){
   .page {
     width: auto;
     height: 100%;
@@ -868,12 +868,16 @@ pre tt:after {
     overflow-x: hidden;
   }
   .body .home ul {
-    margin: 0 52px;
+    margin: 0 4.4em;
     width: 100%;
   }
    .body .home ul li{
     margin: 11px 2em 0px;
-    width: 63%;
+    width: 57%;
+  }
+  .interview-h{
+    margin: 0 0 0 6.4em !important;
+    width: 57% !important;
   }
 }
 
@@ -885,12 +889,16 @@ pre tt:after {
     overflow-x: hidden;
   }
   .body .home ul {
-    margin: 0 52px;
+    margin: 0 3.4em;
     width: 100%;
 }
    .body .home ul li{
-    margin: 11px 2em 0px;
-    width: 63%;
+    margin: 11px 3em 0;
+    width: 53%;
+  }
+  .interview-h{
+    margin: 0 0 0 6.4em !important;
+    width: 53% !important;
   }
 }
 @media(max-width: 480px){
@@ -904,6 +912,10 @@ pre tt:after {
   .body .home ul li{
     margin: 11px 3em 0px;
     width: 53%;
+  }
+  .interview-h{
+    margin: 0 0 0 6em !important;
+    width: 53% !important;
   }
 }
 
@@ -1019,9 +1031,10 @@ pre tt:after {
 }
 
 .interview-h{
-  background: #dddddd;
-  border: 1px solid #adadad;
+  background: #FFFFFF;
+  border: 3px dotted #000000;
   border-radius: 3px;
+  width: 100%;
 }
 /* .interview-h:nth-child(even){
   background: rgb(235, 229, 192);
@@ -1044,6 +1057,14 @@ pre tt:after {
   font-family: Verdana, 'Geneva', Tahoma, sans-serif;
   padding: 20px;
   margin: 10px;
+}
+.question strong {
+  margin-left: -23px;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 5px 5px 5px 23px;
+  line-height: 32pt;
+  box-shadow: -5px 1px 7px 0 #868686;
 }
 
 .answer{
