@@ -13,8 +13,7 @@ import imageH from './img/about_timeline2009-1.png'
 const AboutPage = () => (
   <div className="body" id="main">
 				<div className="about">
-					<h2>About Me</h2>
-					<div>
+					<div className="essay">
 						<p>In high school I acheived a Computer Award of Excellence, and graduated with a reagents diploma.
 						</p>
 						<p>
@@ -39,7 +38,7 @@ const AboutPage = () => (
 							learn through online videos and tutorials.
 						</p>
 					</div>
-					<h2>Timeline of Progression</h2>
+					<h2>Portfolio through the Years</h2>
 						<section className="timeline">
 								{/* 2009-1 Portfolio Website */}
 								<div>

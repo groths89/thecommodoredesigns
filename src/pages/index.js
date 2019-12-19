@@ -27,23 +27,23 @@ const IndexPage = () => (
 					<em>Web Developer</em> <br />
 					<strong>FREELANCE</strong>
 					<br></br>
-					<FontAwesomeIcon class="icon-bg" icon="wifi"></FontAwesomeIcon>	
+					<FontAwesomeIcon className="icon-bg" icon="wifi"></FontAwesomeIcon>	
 				</li>
 				<li>
 					<em>Junior Software Quality Assurance Analyst</em> <br />
 					<strong>AICURE</strong>
 					<br></br>
-					<FontAwesomeIcon class="icon-bg" icon="tasks"></FontAwesomeIcon>
+					<FontAwesomeIcon className="icon-bg" icon="tasks"></FontAwesomeIcon>
 				</li>
 				<li>
 					<em>Video Reviewer</em> <br />
 					<strong>AICURE</strong>
 					<br></br>
-					<FontAwesomeIcon class="icon-bg" icon="user-check"></FontAwesomeIcon>
+					<FontAwesomeIcon className="icon-bg" icon="user-check"></FontAwesomeIcon>
 				</li>
 			</ul>
 			<h2>Education</h2>
-			<ul>
+			<ul className="myEducation">
 				<li>
 					<em>Bachelor of Science</em> <br />
 					<strong>SUNY Oneonta</strong>	
