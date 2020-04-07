@@ -6,6 +6,7 @@ import Canvas from '../components/canvas'
 import projectA from './img/OtB_Graphics.jpg'
 import projectB from './img/TeamSandwich_Branding.jpg'
 import projectC from './img/PrettyInPrintCT_Web.jpg'
+import image from '../../public/static/home-photo.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -19,7 +20,17 @@ const IndexPage = () => (
   	<div className="body" id="main">
 		<div className="home">
 			<div className="canvas-container">
-				<Canvas></Canvas>
+				<div className="canvas-paragraph">
+					<h1>
+						Hello, my name is Gregory Rothstein <br/>
+						<span>a.k.a The Commodore Designs</span>
+					</h1>
+					<p>I am a Web Developer.<br/>And I like sports and videogames.</p>
+				</div>
+				<div className="canvas-image">
+					<img src={image} />
+				</div>
+
 			</div>
 			<h2>Jobs & Employment</h2>
 			<ul>
