@@ -13,8 +13,10 @@ import logoI from './img/logo9.jpg'
 import logoJ from './img/logo10.jpg'
 import logoK from './img/logo11.jpg'
 import logoL from './img/logo12.jpg'
+import Layout from '../components/layout'
 
 const PortfolioPage = () => (
+	<Layout>
   <div className="body" id="main">
         <div className="portfolio">
 					<h2>Portfolio</h2>
@@ -63,6 +65,7 @@ const PortfolioPage = () => (
 
 
 	  </div>
+	</Layout>
 )
 
 export default PortfolioPage

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import logoA from './img/logo1.jpg'
 import logoB from './img/logo2.jpg'
@@ -13,20 +12,22 @@ import logoI from './img/logo9.jpg'
 import logoJ from './img/logo10.jpg'
 import logoK from './img/logo11.jpg'
 import logoL from './img/logo12.jpg'
+import Layout from '../components/layout'
 
 const PortfolioLogoPage = () => (
+	<Layout>
   <div className="body" id="main">
         <div className="portfolio">
 					<h2>Portfolio <span>Logo Design</span></h2>
 					<ul className="navigation">
 						<li>
-							<Link id="myPort" to="/portfolio-logo-design">Logo Design</Link>
+							<a id="myPort" to="/portfolio-logo-design">Logo Design</a>
 						</li>
 						<li>
-							<Link id="myPort" to="/portfolio-web-design">Web Design</Link>
+							<a id="myPort" to="/portfolio-web-design">Web Design</a>
 						</li>
 						<li>
-							<Link id="myPort" to="/portfolio-animation">Animation</Link>
+							<a id="myPort" to="/portfolio-animation">Animation</a>
 						</li>
 					</ul>
 					
@@ -73,6 +74,7 @@ const PortfolioLogoPage = () => (
 
 
 	  </div>
+	</Layout>
 )
 
 export default PortfolioLogoPage

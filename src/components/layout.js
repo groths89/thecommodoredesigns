@@ -1,29 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby';
 
 
-import Header from '../components/header'
-import Sidebar from '../components/sidebar'
-import './index.css'
+import Header from './header'
+import Sidebar from './sidebar'
+import '../layouts/index.css'
 import Character from '../components/img/2d_animation-GRoth.png'
-import fontMI from './fonts/Muli-Italic.eot'
-import fontMIFIX from './fonts/Muli-Italic.eot?#iefix'
-import fontMIWOFF from './fonts/Muli-Italic.woff'
-import fontMITTF from './fonts/Muli-Italic.ttf'
-import fontMISVG from './fonts/Muli-Italic.svg'
-import fontMR from './fonts/Muli-Regular.eot'
-import fontMRFIX from './fonts/Muli-Regular.eot?#iefix'
-import fontMRWOFF from './fonts/Muli-Regular.woff'
-import fontMRTFF from './fonts/Muli-Regular.ttf'
-import fontMRSVG from './fonts/Muli-Regular.svg'
+import fontMI from '../layouts/fonts/Muli-Italic.eot'
+import fontMIFIX from '../layouts/fonts/Muli-Italic.eot?#iefix'
+import fontMIWOFF from '../layouts/fonts/Muli-Italic.woff'
+import fontMITTF from '../layouts/fonts/Muli-Italic.ttf'
+import fontMISVG from '../layouts/fonts/Muli-Italic.svg'
+import fontMR from '../layouts/fonts/Muli-Regular.eot'
+import fontMRFIX from '../layouts/fonts/Muli-Regular.eot?#iefix'
+import fontMRWOFF from '../layouts/fonts/Muli-Regular.woff'
+import fontMRTFF from '../layouts/fonts/Muli-Regular.ttf'
+import fontMRSVG from '../layouts/fonts/Muli-Regular.svg'
 
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children }) => (
   
   <div>
     <Helmet
-      title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -46,11 +46,9 @@ const Layout = ({ children, data }) => (
     > 
     </div>
 
-    <Sidebar siteTitle={data.site.siteMetadata.title} />
     <div className="page">
     
-    
-      {children()}
+      {children}
     </div>
 {/*     <div className="character">
       <img src={Character} />

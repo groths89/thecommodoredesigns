@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import logo from './img/logo.png'
 import bg from './img/bg-body.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -59,17 +58,17 @@ class Sidebar extends React.Component {
 			  
 		  <div className="sidebar" id="mySidenav">
 				<Toggle />
-				<a href="javascript:void(0)" id="btnOpen" onClick={this.handleClick} className="openbtn"><FontAwesomeIcon icon="angle-double-right" /></a>
-				<Link to="/" id="logo">
+				<a to="javascript:void(0)" id="btnOpen" onClick={this.handleClick} className="openbtn"><FontAwesomeIcon icon="angle-double-right" /></a>
+				<a to="/" id="logo">
                     <img src={logo} alt="Logo" />
-                </Link>
+                </a>
 				<ul>
-					<li className="sidebar-nav"><Link id="myAbout" to="/about"><FontAwesomeIcon icon="code-branch" />About</Link></li>
-					{/* <li className="sidebar-nav"><Link id="myAbout" to="/about"><FontAwesomeIcon icon="code-branch" />Experience</Link></li> */}
-					<li className="sidebar-nav"><Link id="myCerts" to="/certifications"><FontAwesomeIcon icon="landmark" />Education</Link></li>
-					<li className="sidebar-nav"><Link id="myPort" to="/portfolio"><FontAwesomeIcon icon="images" />Work Samples</Link></li>
-					<li className="sidebar-nav"><Link id="myCont" to="/contact"><FontAwesomeIcon icon="comments" />Contact</Link></li>
-					<li className="sidebar-nav"><Link id="myResume"><FontAwesomeIcon icon="download" />Resume</Link></li>
+					<li className="sidebar-nav"><a id="myAbout" to="/about"><FontAwesomeIcon icon="code-branch" />About</a></li>
+					{/* <li className="sidebar-nav"><a id="myAbout" to="/about"><FontAwesomeIcon icon="code-branch" />Experience</a></li> */}
+					<li className="sidebar-nav"><a id="myCerts" to="/certifications"><FontAwesomeIcon icon="landmark" />Education</a></li>
+					<li className="sidebar-nav"><a id="myPort" to="/portfolio"><FontAwesomeIcon icon="images" />Work Samples</a></li>
+					<li className="sidebar-nav"><a id="myCont" to="/contact"><FontAwesomeIcon icon="comments" />Contact</a></li>
+					<li className="sidebar-nav"><a id="myResume"><FontAwesomeIcon icon="download" />Resume</a></li>
 				</ul>
 
 				<div className="connect"></div>

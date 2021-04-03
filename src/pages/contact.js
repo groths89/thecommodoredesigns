@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Layout from '../components/layout'
 
 const ContactPage = () => (
+	<Layout>
 			<div className="body" id="main">
 				<div className="contact">
 						<h2>Contact</h2>
@@ -35,7 +37,7 @@ const ContactPage = () => (
 						</div>
 				</div>
 			</div>
-
+	</Layout>
 )
 
 export default ContactPage

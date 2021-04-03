@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
@@ -28,7 +29,7 @@ class Toggle extends React.Component {
      
     render() {
       return (
-        <a className="closebtn" id="btnClose" onClick={this.handleClick}><FontAwesomeIcon icon={faAngleDoubleLeft} /></a>
+        <Link className="closebtn" id="btnClose" onClick={this.handleClick}><FontAwesomeIcon icon={faAngleDoubleLeft} /></Link>
       );
     }
   }

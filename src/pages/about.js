@@ -9,8 +9,10 @@ import imageE from './img/about_timeline2012-2.png'
 import imageF from './img/about_timeline2012-1.png'
 import imageG from './img/about_timeline2009-2.png'
 import imageH from './img/about_timeline2009-1.png'
+import Layout from '../components/layout'
 
 const AboutPage = () => (
+	<Layout>
   <div className="body" id="main">
 				<div className="about">
 					<div className="essay">
@@ -145,6 +147,7 @@ const AboutPage = () => (
 			</div>
 
 	</div>
+	</Layout>
 )
 
 export default AboutPage

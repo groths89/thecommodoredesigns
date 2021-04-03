@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import Slide from '../components/Slide'
 import Canvas from '../components/canvas'
@@ -7,16 +6,21 @@ import projectA from './img/OtB_Graphics.jpg'
 import projectB from './img/TeamSandwich_Branding.jpg'
 import projectC from './img/PrettyInPrintCT_Web.jpg'
 import image from '../../public/static/home-photo.png';
+import wdImage from '../../public/static/home-wd-pic.jpg';
+import eduImage from '../../public/static/home-edu.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faWifi } from '@fortawesome/free-solid-svg-icons'
 import { faUserCheck } from '@fortawesome/free-solid-svg-icons'
 import { faTasks } from '@fortawesome/free-solid-svg-icons'
+import Layout from '../components/layout'
+import { Link } from 'gatsby'
 
 library.add(faWifi, faUserCheck, faTasks)
 
 const IndexPage = () => (
+	<Layout>
   	<div className="body" id="main">
 		<div className="home">
 			<div className="canvas-container">
@@ -32,23 +36,27 @@ const IndexPage = () => (
 				</div>
 
 			</div>
-			<h2>Jobs & Employment</h2>
+			<h2>My Most Recent Jobs & Employment</h2>
 			<ul>
 				<li>
-					<em>Web Developer</em> <br />
 					<strong>FREELANCE</strong>
+					<em>Web Developer</em> <br />
+{/* 					
 					<br></br>
-					<FontAwesomeIcon className="icon-bg" icon="wifi"></FontAwesomeIcon>	
+					<FontAwesomeIcon className="icon-bg" icon="wifi"></FontAwesomeIcon> */}
+					<img className="wd-image" src={wdImage} />	
 				</li>
 				<li>
-					<em>Junior Software Quality Assurance Analyst</em> <br />
 					<strong>AICURE</strong>
+					<em>Junior Developer</em> <br />
+					
 					<br></br>
 					<FontAwesomeIcon className="icon-bg" icon="tasks"></FontAwesomeIcon>
 				</li>
 				<li>
-					<em>Video Reviewer</em> <br />
 					<strong>AICURE</strong>
+					<em>Video Reviewer</em> <br />
+					
 					<br></br>
 					<FontAwesomeIcon className="icon-bg" icon="user-check"></FontAwesomeIcon>
 				</li>
@@ -56,8 +64,9 @@ const IndexPage = () => (
 			<h2>Education</h2>
 			<ul className="myEducation">
 				<li>
+					<strong>SUNY Oneonta</strong>
 					<em>Bachelor of Science</em> <br />
-					<strong>SUNY Oneonta</strong>	
+					<img className="edu-image" src={eduImage} />
 				</li>
 			</ul>
 			<h2>Work Samples</h2>
@@ -206,7 +215,7 @@ const IndexPage = () => (
 			</div> */}
 		</div>
 		
-
+	</Layout>
 )
 
 export default IndexPage

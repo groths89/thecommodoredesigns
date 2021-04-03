@@ -9,8 +9,10 @@ import badgeA from './img/certifications_apprentice-badge-codeschool.png'
 import badgeB from './img/certifications_csscrosscountry-course-codeschool.png'
 import badgeC from './img/certifications_shapingupwithangularjs-course-codeschool.png'
 import badgeD from './img/certifications_mobile-maven-badge-codeschool.png'
+import Layout from '../components/layout'
 
 const CertificationsPage = () => (
+	<Layout>
 			<div className="body" id="main">
 				<div className="certifications">
 				<h2>Degrees and Certifications</h2>	
@@ -47,6 +49,7 @@ const CertificationsPage = () => (
 					</ul>
 				</div>
 			</div>
+	</Layout>
 )
 
 export default CertificationsPage

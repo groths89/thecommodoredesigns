@@ -9,12 +9,17 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "firebase-functions": "^3.5.0",
     "firebase-tools": "^7.15.1",
-    "gatsby": "^1.9.247",
+    "gatsby": "^2.20.6",
     "gatsby-cli": "^2.8.22",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-s3": "^0.3.8",
+    "history": "^5.0.0",
+    "react": "^17.0.2",
     "react-chronos": "^1.0.5",
+    "react-dom": "^17.0.2",
     "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-timespan": "^1.0.0"
   },
   "keywords": [
@@ -22,7 +27,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "firebase deploy",
+    "deploy": "gatsby-plugin-s3 deploy",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
