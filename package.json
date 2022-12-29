@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "firebase-functions": "^3.5.0",
     "firebase-tools": "^7.15.1",
-    "gatsby": "^2.20.6",
+    "gatsby": "^5.3.3",
     "gatsby-cli": "^2.8.22",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
